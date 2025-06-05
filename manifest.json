@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Save to Google Photos",
+  "version": "1.0",
+  "description": "Use this extension to easily save any image from the web to your Google Photos with a single right click.",
+  "permissions": [
+    "contextMenus",
+    "identity",
+    "notifications"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "oauth2": {
+    "client_id": "864518728048-mlh02e8hkgnj8ajuo37dcpvcaipvp9ne.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/photoslibrary.appendonly"
+    ]
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default-icon": {
+      "16": "Icon.png",
+      "32": "Icon.png",
+      "64": "Icon.png",
+      "128": "Icon.png"
+    },
+    "default_title": "Save to Google Photos"
+  },
+  "icons": {
+    "16": "Icon.png",
+    "32": "Icon.png",
+    "64": "Icon.png",
+    "128": "Icon.png"
+  }
+}
